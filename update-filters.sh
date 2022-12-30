@@ -1,4 +1,5 @@
 #!/bin/bash
+wget -O filters/adguard.txt https://filters.adtidy.org/android/filters/2_optimized.txt
 wget -O filters/annoyances.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
 wget -O filters/social.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt
 wget -O filters/spyware.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
