@@ -2,7 +2,7 @@ readonly -A FILTERS=(
     ['adguad-easy.txt']='https://filters.adtidy.org/android/filters/2_optimized.txt'
     ['annoyances.txt']='https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt'
     ['tracking.txt']='https://filters.adtidy.org/android/filters/17_optimized.txt'
-    ['abpvn-ext.txt']='https://raw.githubusercontent.com/luxysiv/Blockads/master/Android/abpvn-ext.txt'
+    ['abpvn-ext.txt']='https://github.com/luxysiv/filters/raw/main/abpvn-ext.txt'
     ['spyware.txt']='https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt'
     ['social_filters.txt']='https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt'
 )
