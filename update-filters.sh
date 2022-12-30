@@ -16,6 +16,6 @@ input_files=$(IFS=, ; echo "${filters[*]}")
 
 ./ruleset_converter --input_format=filter-lists \
 
-	--output_format=unindexed-ruleset \    --input_files=$input_files \
+	--output_format=unindexed-ruleset \    --input_files=$input_file \
 
 	--output_file=filters.dat
