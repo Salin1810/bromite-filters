@@ -10,7 +10,10 @@ wget -O filters/track-param.txt https://raw.githubusercontent.com/AdguardTeam/Fi
 
 wget -O filters/vietnamese.txt https://github.com/luxysiv/Blockads/raw/master/Android/abpvn-ext.txt
 
-ruleset_converter --input_format=filter-list \
-		--output_format=unindexed-ruleset \
-                --input_files=annoyances.txt,social.txt,spyware.txt \
-		--output_file=filters.dat
+filters=($(ls -S filters/*))
+input_files=$(IFS=, ; echo "${filters[*]}")
+
+./ruleset_converter --input_format=filter-list \
+	--output_format=unindexed-ruleset \
+    --input_files=$input_files \
+	--output_file=filters.dat
