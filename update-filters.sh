@@ -1,5 +1,5 @@
 readonly -A FILTERS=(
-    ['ublock_filters.txt']='https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt'
+    ['adguad-easy.txt']='https://filters.adtidy.org/android/filters/2_optimized.txt'
     ['ublock_badware.txt']='https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt'
     ['ublock_privacy.txt']='https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt'
     ['ublock_resource-abuse.txt']='https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt'
