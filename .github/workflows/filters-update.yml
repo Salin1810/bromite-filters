@@ -30,7 +30,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: filters.dat
-          name: Filterlist - ${{ env.DATE }}
+          name: Filterlist ${{ env.DATE }}
           tag_name: ${{ env.DATE }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
