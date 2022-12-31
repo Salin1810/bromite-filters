@@ -16,7 +16,8 @@ jobs:
           ./update-filters.sh
 
       - name: Generate date
-        run: echo "DATE=$(date +%F-%H-%M)" >> $GITHUB_ENV
+        run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
+             echo "SHORT_COMMIT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
       - name: Commit filters
         uses: EndBug/add-and-commit@v9.1.1
@@ -26,3 +27,11 @@ jobs:
           message: 'Update filters: ${{ env.DATE }}'
           push: true
 
+      - name: Release filter lists
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/filters.dat
+          name: Filterlist - ${{ env.DATE }}
+          tag_name: ${{ env.DATE }}-${{ env.SHORT_COMMIT }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
