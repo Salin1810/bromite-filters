@@ -17,7 +17,6 @@ jobs:
 
       - name: Generate date
         run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
-             echo "SHORT_COMMIT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
       - name: Commit filters
         uses: EndBug/add-and-commit@v9.1.1
@@ -32,6 +31,6 @@ jobs:
         with:
           files: filters.dat
           name: Filterlist - ${{ env.DATE }}
-          tag_name: ${{ env.DATE }}-${{ env.SHORT_COMMIT }}
+          tag_name: ${{ env.DATE }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
