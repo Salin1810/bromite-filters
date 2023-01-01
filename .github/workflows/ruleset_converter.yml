@@ -15,7 +15,7 @@ jobs:
 
       - name: Download ruleset_converter
         run: |
-          wget -O ruleset_converter https://github.com/bromite/bromite/releases/latest/download/ruleset_converter
+          wget https://github.com/bromite/bromite/releases/latest/download/ruleset_converter
 
       - name: Generate date
         run: echo "DATE=$(date +%F-%H-%M)" >> $GITHUB_ENV
